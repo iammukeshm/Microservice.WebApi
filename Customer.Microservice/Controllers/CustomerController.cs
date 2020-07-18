@@ -58,8 +58,8 @@ namespace Customer.Microservice.Controllers
             {
                 customer.City = customerData.City;
                 customer.Name = customerData.Name;
-                customer.Contact = customerData.Name;
-                customer.Email = customerData.Name;
+                customer.Contact = customerData.Contact;
+                customer.Email = customerData.Email;
                 await _context.SaveChanges();
                 return Ok(customer.Id);
             }
